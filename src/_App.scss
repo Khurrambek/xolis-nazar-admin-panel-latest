@@ -1,0 +1,34 @@
+
+// Set ups
+
+//colors
+$primary-background-color: #e5e5e5;
+$primary-btn-bg-color: #222;
+$btn-color: #fff;
+$login-form-bg-color: #fff;
+$nav-active-bg-color: #9ee3d3;
+$nav-hover-bg-color: #9ee3d3;
+
+// size
+$login-heading-size: 40px;
+$page-heading-size: 30px;
+$nav-links-size: 22px;
+$save-btn-font-size: 22px;
+$label-heading-size: 16px;
+$label-paragraph-size: 16px;
+$border-radius-size: 80px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $primary-background-color;
+}
+
+
+
+
+
