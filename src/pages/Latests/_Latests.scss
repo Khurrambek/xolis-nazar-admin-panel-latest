@@ -1,0 +1,14 @@
+@import '/src/App';
+
+.latest-heading {
+    font-family: 'Irvin';
+    font-size: $page-heading-size;
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+.btn-dark {
+    background: #000!important;
+}

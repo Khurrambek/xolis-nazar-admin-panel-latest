@@ -1,11 +1,12 @@
 import React from 'react';
-import './_Daily.scss';
+import AreaInput from '../../components/AreaInput/AreaInput';
+import './_Latests.scss';
 
-const Daily = () => {
+const Latests = () => {
     return(
-        <div className="daily">
-            <div className="daily-wrapper">
-                <form action="" className="daily-form">
+        <div className="latest">
+            <div className="latest-wrapper">
+                <form action="" className="latest-form">
                     <div className="latest-top row">
                         <div className="latest-text col-md-6">
                             <h3 className="latest-heading">Asosiy yuqorida chiqadigan yangiliklar</h3>
@@ -19,7 +20,6 @@ const Daily = () => {
                     </div>
                     <div className="latest-middle ps-3">
                         <AreaInput />
-                        input:text.
                     </div>
                     <div className="latest-bottom py-4 ps-3">
                         <button type="submit" className="btn btn-dark px-4">Yangilik qo'shish</button>
@@ -30,4 +30,4 @@ const Daily = () => {
     )
 }
 
-export default Daily;
+export default Latests;

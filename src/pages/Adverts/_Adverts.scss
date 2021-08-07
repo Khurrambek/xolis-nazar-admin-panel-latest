@@ -1,0 +1,21 @@
+@import '/src/App';
+
+
+.adverts-heading {
+    font-size: $page-heading-size;
+    font-family: 'Irvin';
+}
+
+.advert-wrapper h5 {
+    font-family: 'Irvin';
+    font-size: 18px;
+}
+
+.advert-mobile {
+    padding: 80px 0;
+}
+
+.form-text {
+    text-align: justify;
+}
+

@@ -1,0 +1,43 @@
+@import '/src/App';
+.file-upload-wrapper {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    font-family: 'Irvin';
+}
+
+.file-upload-wrapper::after {
+    content: attr(data-text);
+    position: absolute;
+    text-align: center;
+    font-family: sans-serif;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 15px 10px;
+    width: 70%;
+}
+
+.file-upload-wrapper::before {
+    content: 'Upload';
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    background: $primary-btn-bg-color;
+    color: #fff;
+    width: 30%;
+    padding: 15px;
+}
+
+.file-upload-wrapper input {
+    position: absolute;
+    opacity: 0;
+    height: 60px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
