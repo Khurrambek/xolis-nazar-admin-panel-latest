@@ -4,12 +4,12 @@ import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import './_AreaInput.scss';
 
 
-const AreaInput = () => {
+const AreaInput = ({placeholder}) => {
     return(
         <CKEditor
             className="editor"
             editor={ClassicEditor}
-            data=""
+            data={placeholder}
             onReady={editor => {
                 // You can store the "editor" and use when it is needed.
                 console.log('Editor is ready to use!', editor);

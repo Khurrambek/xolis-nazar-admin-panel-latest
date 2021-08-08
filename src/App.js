@@ -6,6 +6,14 @@ import ImageInput from './components/ImageInput/ImageInput';
 import AreaInput from './components/AreaInput/AreaInput';
 import Adverts from './pages/Adverts/Adverts';
 import Latests from './pages/Latests/Latest';
+import Daily from './pages/Daily/Daily';
+import World from './pages/World/World';
+import Opinion from './pages/Opinion/Opinion';
+import Tahlil from './pages/Tahlil/Tahlil';
+import Portret from './pages/Portret/Portret';
+import Sale from './pages/Sale/Sale';
+import Newspaper from './pages/Newspaper/Newspaper';
+import Subscribe from './pages/Subscribe/Subscribe';
 
 
 function App() {
@@ -14,8 +22,16 @@ function App() {
       {/* <Login /> */}
       {/* <ImageInput /> */}
       {/* <AreaInput />       */}
-      {/* <Adverts /> */}
+      <Adverts />
       <Latests />
+      <Daily />
+      <World />
+      <Opinion />
+      <Tahlil />
+      <Portret />
+      <Sale />
+      <Newspaper />
+      <Subscribe />
     </div>
   );
 }

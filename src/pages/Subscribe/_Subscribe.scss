@@ -1,0 +1,17 @@
+@import '/src/App';
+
+tr {
+    margin: 10px 0 !important;
+}
+
+table, thead, tbody, tfoot, tr, td, th  {
+    background: $primary-background-color;
+    border-color: #000;
+    color: #474747;
+    border-spacing: 10rem 0 !important;
+    border-collapse: collapse !important;
+}
+
+.subscribe-heading, .fs-5, .more-btn {
+    font-family: 'Irvin';
+}

@@ -3,7 +3,7 @@
 
 //colors
 $primary-background-color: #e5e5e5;
-$primary-btn-bg-color: #222;
+$primary-btn-bg-color: #000;
 $btn-color: #fff;
 $login-form-bg-color: #fff;
 $nav-active-bg-color: #9ee3d3;
@@ -26,6 +26,10 @@ $border-radius-size: 80px;
 
 body {
     background: $primary-background-color;
+}
+
+.btn-dark {
+    padding: 10px 20px;
 }
 
 
