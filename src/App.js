@@ -1,37 +1,49 @@
 import React from 'react';
-import './_App.scss';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-// import Login from './components/Login/Login';
-import ImageInput from './components/ImageInput/ImageInput';
-import AreaInput from './components/AreaInput/AreaInput';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Sections from './pages/Sections/Sections';
 import Adverts from './pages/Adverts/Adverts';
-import Latests from './pages/Latests/Latest';
-import Daily from './pages/Daily/Daily';
-import World from './pages/World/World';
-import Opinion from './pages/Opinion/Opinion';
-import Tahlil from './pages/Tahlil/Tahlil';
-import Portret from './pages/Portret/Portret';
-import Sale from './pages/Sale/Sale';
-import Newspaper from './pages/Newspaper/Newspaper';
-import Subscribe from './pages/Subscribe/Subscribe';
+import Accounts from './pages/Accounts/Accounts';
+import ErrorPage from './pages/ErrorPage/ErrorPage';
+import Navigation from './components/Navigation/Navigation';
+import NavbarTop from './components/NavbarTop/NavbarTop';
+import AddCategory from './pages/AddCategory/AddCategory';
+import AddSection from './pages/AddSection/AddSection';
+import {
+  Route,
+  Switch
+} from 'react-router-dom';
+import CreateAdverts from './pages/Adverts/CreateAdverts/CreateAdverts';
+
+
 
 
 function App() {
+  
   return (
-    <div className="container">
-      {/* <Login /> */}
-      {/* <ImageInput /> */}
-      {/* <AreaInput />       */}
-      <Adverts />
-      <Latests />
-      <Daily />
-      <World />
-      <Opinion />
-      <Tahlil />
-      <Portret />
-      <Sale />
-      <Newspaper />
-      <Subscribe />
+    <div className="app">
+      <div className = "row row-bg-main">
+        <aside className ="col-md-2 navigation-wrapper">
+          <Navigation />
+        </aside>
+        <main className="col-md-10">
+          <nav className="navbar-section">
+            <NavbarTop />
+          </nav>
+          <Switch>
+            <Route path = "/" exact component = {Dashboard}/>
+            <Route path="/sections" component = {Sections} />
+            <Route path="/adverts" component={Adverts} />
+            <Route path="/addcategory" component={AddCategory} />
+            <Route path="/accounts" component = {Accounts} />
+            <Route path="/addadvert" component={CreateAdverts} />
+            <Route path="/addsection" component={AddSection} />
+            <Route path="/*" component={ErrorPage} />
+          </Switch>
+        </main>
+      </div>
+      
     </div>
   );
 }

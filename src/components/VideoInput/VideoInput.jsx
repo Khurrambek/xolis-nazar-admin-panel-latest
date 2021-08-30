@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './imageinput.css';
+import './_VideoInput.scss';
 
-const ImageInput = () => {
+const VideoInput = () => {
     const [fileName, setfileName] = useState('Select Your Files');
     const [image, setimage] = useState('');
     const [preview, setpreview] = useState()
@@ -13,7 +13,7 @@ const ImageInput = () => {
             setimage(null)
         }
     }
-    useEffect(()=> {
+    useEffect(() => {
         if (image) {
             const reader = new FileReader();
             reader.onloadend = () => {
@@ -28,7 +28,7 @@ const ImageInput = () => {
     return (
         <div className="file-upload-container">
             <div className="file-upload-preview">
-                <img src={preview} accept = "image/*" />
+                <video width="100%" src={preview} autoPlay="true" controls />
             </div>
             <div className="file-upload-wrapper" data-text={fileName}>
                 <input type="file" src="" alt="" className="form-control form-image" onChange={fileHandler} />
@@ -37,4 +37,4 @@ const ImageInput = () => {
     )
 }
 
-export default ImageInput;
+export default VideoInput;

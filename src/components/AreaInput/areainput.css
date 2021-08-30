@@ -1,0 +1,30 @@
+.ck-toolbar {
+    background: #2e2e2e !important;
+    width: 100% !important;
+}
+
+.ck.ck-button:not(.ck-disabled):hover,
+a.ck.ck-button:not(.ck-disabled):hover {
+    background: #2e2e2e !important;
+    color: #2e2e2e !important;
+}
+
+.ck.ck-button:not(.ck-disabled),
+a.ck.ck-button:not(.ck-disabled) {
+    background: #2e2e2e !important;
+}
+
+.ck.ck-reset_all,
+.ck.ck-reset_all * {
+    color: #fff !important;
+}
+
+.ck {
+    width: 100%;
+    height: 200px;
+}
+
+.cke_top {
+    background: #2e2e2e !important;
+    display: none !important;
+}

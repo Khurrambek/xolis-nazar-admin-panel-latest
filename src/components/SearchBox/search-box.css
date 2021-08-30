@@ -1,0 +1,31 @@
+.search-input {
+    position: relative !important;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+.section-search {
+    position: relative;
+}
+
+.search-input-icon {
+    position: absolute !important;
+    right: 25px;
+    font-size: 24px;
+    top: 0;
+    background: transparent;
+    border: none;
+    padding: 0;
+    /* z-index: 10; */
+}
+
+.search-input-icon:hover {
+    background: #fff;
+    background: transparent;
+}
+
+.search-input-icon:focus+.btn,
+.btn:focus {
+    box-shadow: none;
+}

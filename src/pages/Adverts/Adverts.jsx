@@ -1,34 +1,43 @@
 import React from 'react';
-import './_Adverts.scss';
-import ImageInput from '../../components/ImageInput/ImageInput';
-
+import { AiOutlinePlusCircle } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import SearchBox from '../../components/SearchBox/SearchBox';
+import './advert.css';
+import AdvertsImg from './AdvertsImg/AdvertsImg';
 
 const Adverts = () => {
-    return(
-        <div className="row g-5 advert-wrapper">
-            <div className="col-md-6 advert-box py-5">
-                <h3 className="adverts-heading pb-5">asosiy yuqorida chiqadigan reklama</h3>
-                <div className="advert-desktop">
-                    <h5>desktop</h5>
-                    <p className="form-text">PC uchun reklama joylayotganda o'lcham 1250x368 bo'lishi kerak. Portret shaklida</p>
-                    <ImageInput />
+    return (
+        <>
+            <section className="navbar-secondary">
+                <select name="" id="" className="form-select advert-form-select">
+                    <option value="1">1-25</option>
+                    <option value="1">26-50</option>
+                    <option value="1">51-75</option>
+                    <option value="1">76-100</option>
+                </select>
+                <div className="right-btn">
+                    <Link to="/addadvert" className="btn item-right-btn"> <AiOutlinePlusCircle /> Add</Link>
                 </div>
-                <div className="advert-mobile my-5">
-                    <h5>mobile</h5>
-                    <p className="form-text">PC uchun reklama joylayotganda o'lcham 1250x368 bo'lishi kerak. Portret shaklida</p>
-                    <ImageInput />
+
+            </section>
+            <section className="search-box">
+                <SearchBox />
+            </section>
+            <section className="adverts-img-section">
+                <div className="row adverts-img-wrapper">
+                    <AdvertsImg />
+                    <AdvertsImg />
+                    <AdvertsImg />
+                    <AdvertsImg />
+                    <AdvertsImg />
+                    <AdvertsImg />
+                    <AdvertsImg />
+                    <AdvertsImg />
                 </div>
-            </div>
-            <div className="col-md-6 py-5 ">
-                <h3 className="adverts-heading pb-5">Qo'shimcha sahifalardagi reklama</h3>
-                <div className="advert-desktop">
-                    <h5>desktop</h5>
-                    <p className="form-text">PC uchun reklama joylayotganda o'lcham 1250x368 bo'lishi kerak. Portret shaklida</p>
-                    <ImageInput />
-                </div>
-            </div>
-        </div>
+            </section>
+        </>
+
     )
 }
 
-export default Adverts;
+export default Adverts

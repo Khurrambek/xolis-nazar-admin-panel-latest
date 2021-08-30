@@ -1,0 +1,44 @@
+:root {
+    --page-bg-color: #F9F9F9;
+    --page-el-bg-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation-wrapper {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px 20px;
+}
+
+.row {
+    width: 100%;
+}
+
+.row-bg-main {
+    background: #F9F9F9;
+}
+
+.form-control {
+    border: 1px solid #ddd !important;
+}
+
+.btn {
+    border: none !important;
+}
+
+.btn-primary {
+    background: #6236FF !important;
+}
+
+.btn-success {
+    background: #00DB00 !important;
+}
+
+.btn-danger {
+    background: #FA5B5B !important;
+}

@@ -1,0 +1,15 @@
+.addcategory-form-section {
+    padding: 10px 20px;
+    height: 100vh;
+}
+
+.addcategory-form-wrapper {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px 20px;
+}
+
+.addcategory-input {
+    border: 1px solid #ddd;
+}
